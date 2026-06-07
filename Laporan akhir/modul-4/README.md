@@ -17,6 +17,33 @@ Analisis dan kesimpulan
 
 # 2. Tabel IP Address
 
+| Perangkat | Interface | IP Address | Gateway | Keterangan |
+|------------|-----------|------------|----------|------------|
+| Mikrotik | ether1 | DHCP Client | DHCP dari jaringan lab | Terhubung ke Net / Cloud |
+| Mikrotik | ether2 | 10.10.10.1/30 | - | Terhubung ke Fortinet port1 |
+| Mikrotik | ether3 | 172.16.100.1/24 | - | Gateway untuk client WAN |
+| Fortinet | port1 | 10.10.10.2/30 | 10.10.10.1 | Interface WAN |
+| Fortinet | port2 | 10.20.20.1/30 | - | Interface INSIDE ke vIOS |
+| Fortinet | port3 | 192.168.20.1/24 | - | Interface DMZ |
+| vIOS | GigabitEthernet0/0 | 10.20.20.2/30 | - | Terhubung ke Fortinet port2 |
+| vIOS | GigabitEthernet0/1 | 192.168.10.1/24 | - | Gateway LAN |
+| LAN | eth0 | 192.168.10.10/24 | 192.168.10.1 | Client internal LAN |
+| WAN | eth0 | 172.16.100.10/24 | 172.16.100.1 | Client eksternal WAN |
+| DMZ | eth0 | 192.168.20.10/24 | 192.168.20.1 | Ubuntu Server (Web Server Nginx) |
+
+### Keterangan Jaringan
+
+- WAN Network : 172.16.100.0/24
+- Fortinet WAN : 10.10.10.2/30
+- Link Fortinet ↔ vIOS : 10.20.20.0/30
+- LAN Network : 192.168.10.0/24
+- DMZ Network : 192.168.20.0/24
+
+### Virtual IP (VIP)
+
+| Nama | External IP | Internal IP | Service |
+|--------|------------|------------|---------|
+| WEB_SERVER | 10.10.10.2 | 192.168.20.10 | HTTP (TCP/80) |
 ![Tabel](images/tabel%20ip%20address.jpeg)
 
 ---
