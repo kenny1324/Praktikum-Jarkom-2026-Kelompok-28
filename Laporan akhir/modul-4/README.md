@@ -65,7 +65,7 @@ Analisis dan kesimpulan
 ![DMZ PING LAN](images/dmz%20ping%20lan.jpeg)
 
 ## LAN KE CISCO
-![LAN KE CISCO](images/lan%20ke%20cisco.jpeg)
+![LAN KE CISCO](images/lan%20ke%20cisco%201.jpeg)
 
 ## LAN KE DMZ
 ![LAN KE DMZ](images/lan%20ke%20dmz.jpeg)
