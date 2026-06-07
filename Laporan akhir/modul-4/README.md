@@ -44,7 +44,6 @@ Analisis dan kesimpulan
 | Nama | External IP | Internal IP | Service |
 |--------|------------|------------|---------|
 | WEB_SERVER | 10.10.10.2 | 192.168.20.10 | HTTP (TCP/80) |
-![Tabel](images/tabel%20ip%20address.jpeg)
 
 ---
 
