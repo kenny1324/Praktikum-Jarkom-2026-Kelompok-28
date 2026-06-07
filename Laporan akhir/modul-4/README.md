@@ -112,10 +112,22 @@ Analisis dan kesimpulan
 
 # 5. Analisis dan Kesimpulan
 
-## ANALISIS DAN KESIMPULAN
+## ANALISIS
+
+Pada praktikum ini dilakukan konfigurasi jaringan yang terdiri dari MikroTik sebagai ISP, FortiGate sebagai firewall, Cisco Router sebagai gateway LAN, serta Ubuntu Server sebagai web server pada zona DMZ. Setiap perangkat dikonfigurasi sesuai topologi yang diberikan, meliputi pengaturan IP Address, routing, NAT, firewall policy, dan Virtual IP (VIP) pada FortiGate.
+
+Setelah konfigurasi selesai, dilakukan beberapa pengujian untuk memastikan konektivitas dan keamanan jaringan. Client LAN berhasil melakukan komunikasi dengan gateway Cisco, FortiGate, serta server DMZ. Selain itu, client LAN juga dapat mengakses web server menggunakan alamat IP asli DMZ yaitu 192.168.20.10 sesuai dengan policy LAN_to_DMZ yang telah dibuat.
+
+Pada sisi WAN, client berhasil mengakses web server DMZ melalui alamat 10.10.10.2 yang merupakan alamat WAN FortiGate. Hal ini menunjukkan bahwa konfigurasi VIP dan port forwarding telah berjalan dengan baik. Sementara itu, client WAN tidak dapat mengakses jaringan LAN maupun IP asli server DMZ secara langsung, sehingga dapat disimpulkan bahwa firewall policy yang diterapkan berhasil membatasi akses sesuai kebutuhan dan meningkatkan keamanan jaringan.
 
 Dari praktikum yang sudah dilakukan, dapat disimpulkan bahwa jaringan wireless ternyata bisa dikonfigurasi untuk berbagai kebutuhan tergantung topologi yang digunakan. Pada praktikum pertama dengan topologi Point to Point, dua router berhasil dihubungkan secara nirkabel di mana Router A berperan sebagai bridge dan Router B sebagai station. Komunikasi antar-router berjalan lancar. Namun, koneksi antar laptop belum berjalan dengan baik.
 Pada praktikum kedua dengan topologi Point to Multipoint, pendekatannya lebih simpel karena menggunakan bridge interface yang menyatukan wlan1 dan ether2 menjadi satu segmen jaringan. Hasilnya semua perangkat berada dalam satu jaringan yang sama tanpa perlu konfigurasi routing. DHCP Server di Router A juga berjalan dengan baik, terbukti dari status bound di Router B dan laptop yang langsung dapat IP otomatis.
 Secara keseluruhan, kedua topologi ini punya kelebihan dan kekurangannya masing-masing. Point to Point cocok dipakai ketika kita butuh menghubungkan dua titik secara spesifik dengan konfigurasi yang lebih terkontrol. Sementara Point to Multipoint lebih cocok untuk skenario yang butuh satu access point melayani banyak client sekaligus, karena konfigurasinya lebih efisien dan tidak perlu menambahkan routing secara manual untuk setiap titik yang terhubung.
+
+## Kesimpulan
+
+Berdasarkan hasil praktikum yang telah dilakukan, seluruh konfigurasi jaringan berhasil diterapkan sesuai dengan topologi dan instruksi yang diberikan. Routing antar perangkat, NAT, firewall policy, serta konfigurasi DMZ pada FortiGate dapat berfungsi dengan baik.
+
+Hasil pengujian menunjukkan bahwa client LAN dapat mengakses server DMZ dan jaringan yang diizinkan, sedangkan client WAN hanya dapat mengakses layanan web yang dipublikasikan melalui VIP tanpa dapat mengakses langsung jaringan internal. Dengan demikian, penerapan firewall dan DMZ menggunakan FortiGate berhasil mengontrol lalu lintas jaringan sesuai aturan yang telah ditentukan sekaligus menjaga keamanan jaringan internal.
 
 ---
