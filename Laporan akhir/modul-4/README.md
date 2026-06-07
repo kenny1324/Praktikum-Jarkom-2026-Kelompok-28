@@ -112,7 +112,7 @@ Analisis dan kesimpulan
 
 # 5. Analisis dan Kesimpulan
 
-## ANALISIS
+## Analisi
 
 Pada tugas modul ini dilakukan konfigurasi jaringan yang terdiri dari MikroTik sebagai ISP, FortiGate sebagai firewall, Cisco Router sebagai gateway LAN, serta Ubuntu Server sebagai web server pada zona DMZ. Setiap perangkat dikonfigurasi sesuai topologi yang diberikan, meliputi pengaturan IP Address, routing, NAT, firewall policy, dan Virtual IP (VIP) pada FortiGate.
 
