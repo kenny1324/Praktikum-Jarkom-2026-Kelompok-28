@@ -56,37 +56,31 @@ Analisis dan kesimpulan
 # 4. Hasil Pengujian
 
 ## CLIENT LAN AKSES DMZ
-![CLIENT LAN AKSES DMZ](client%20lan%20akses%20dmz.jpeg)
+![CLIENT LAN AKSES DMZ](images/client%20lan%20akses%20dmz.jpeg)
 
 ## CLIENT WAN AKSES INET
-![CLIENT WAN AKSES INET](client%20wan%20akses.jpeg)
+![CLIENT WAN AKSES INET](images/client%20wan%20akses.jpeg)
 
 ## DMZ PING LAN
-![DMZ PING LAN](dmz%20ping%20lan.jpeg)
+![DMZ PING LAN](images/dmz%20ping%20lan.jpeg)
 
 ## LAN KE CISCO
-![LAN KE CISCO](lan%20ke%20cisco.jpeg)
+![LAN KE CISCO](images/lan%20ke%20cisco.jpeg)
 
 ## LAN KE DMZ
-![LAN KE DMZ](lan%20ke%20dmz.jpeg)
+![LAN KE DMZ](images/lan%20ke%20dmz.jpeg)
 
 ## LAN KE FORTIGATE
-![LAN KE FORTIGATE](lan%20ke%20fortigate.jpeg)
-
-## TABEL IP ADDRESS
-![TABEL IP ADDRESS](tabel%20ip%20address.jpeg)
-
-## TOPOLOGI
-![TOPOLOGI](topologi.jpeg)
+![LAN KE FORTIGATE](images/lan%20ke%20fortigate.jpeg)
 
 ## WAN KE FORTIGATE
-![WAN KE FORTIGATE](wan%20ke%20fortigate.jpeg)
+![WAN KE FORTIGATE](images/wan%20ke%20fortigate.jpeg)
 
 ## WAN KE ISP MIKROTIK
-![WAN KE ISP MIKROTIK](wan%20ke%20isp%20mikrotik.jpeg)
+![WAN KE ISP MIKROTIK](images/wan%20ke%20isp%20mikrotik.jpeg)
 
 ## WAN KE LAN DAN DMZ ASLI
-![WAN KE LAN DAN DMZ ASLI](wan%20ke%20lan%20dan%20dmz%20asli.jpeg)
+![WAN KE LAN DAN DMZ ASLI](images/wan%20ke%20lan%20dan%20dmz%20asli.jpeg)
 
 ---
 
