@@ -84,7 +84,7 @@ Analisis dan kesimpulan
 ## CLIENT LAN AKSES DMZ
 ![CLIENT LAN AKSES DMZ](images/client%20lan%20akses%20dmz.jpeg)
 
-## CLIENT WAN AKSES INET
+## CLIENT WAN AKSES FORTIGATE
 ![CLIENT WAN AKSES INET](images/client%20wan%20akses.jpeg)
 
 ## DMZ PING LAN
