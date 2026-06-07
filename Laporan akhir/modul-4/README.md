@@ -49,50 +49,53 @@ Analisis dan kesimpulan
 
 ## KONFIGURASI UBUNTU DMZ
 
-![7](images/KONFIGYRASI%20UBUNTU%20DMZ.jpeg)
+![7](images/KONFIGURASI%20ROUTING%20FORTNET.jpeg)
+
 ---
 
 # 4. Hasil Pengujian
 
-## Ping PC A ke Router
+## CLIENT LAN AKSES DMZ
+![CLIENT LAN AKSES DMZ](client%20lan%20akses%20dmz.jpeg)
 
-Screenshot:
+## CLIENT WAN AKSES INET
+![CLIENT WAN AKSES INET](client%20wan%20akses.jpeg)
 
-![Ping Router](images/ping-router.png)
+## DMZ PING LAN
+![DMZ PING LAN](dmz%20ping%20lan.jpeg)
 
-Hasil:
-Ping berhasil tanpa packet loss.
+## LAN KE CISCO
+![LAN KE CISCO](lan%20ke%20cisco.jpeg)
 
----
+## LAN KE DMZ
+![LAN KE DMZ](lan%20ke%20dmz.jpeg)
 
-## Ping PC A ke Internet
+## LAN KE FORTIGATE
+![LAN KE FORTIGATE](lan%20ke%20fortigate.jpeg)
 
-Screenshot:
+## TABEL IP ADDRESS
+![TABEL IP ADDRESS](tabel%20ip%20address.jpeg)
 
-![Ping Internet](images/ping-google.png)
+## TOPOLOGI
+![TOPOLOGI](topologi.jpeg)
 
-Hasil:
-Host berhasil mengakses internet.
+## WAN KE FORTIGATE
+![WAN KE FORTIGATE](wan%20ke%20fortigate.jpeg)
 
----
+## WAN KE ISP MIKROTIK
+![WAN KE ISP MIKROTIK](wan%20ke%20isp%20mikrotik.jpeg)
 
-## Ping PC A ke PC B
-
-Screenshot:
-
-![Ping Antar PC](images/ping-pc.png)
-
-Hasil:
-Komunikasi antar host berhasil.
+## WAN KE LAN DAN DMZ ASLI
+![WAN KE LAN DAN DMZ ASLI](wan%20ke%20lan%20dan%20dmz%20asli.jpeg)
 
 ---
 
 # 5. Analisis dan Kesimpulan
 
-## Analisis
+## ANALISIS DAN KESIMPULAN
 
-Berdasarkan hasil konfigurasi, seluruh perangkat berhasil memperoleh alamat IP sesuai subnet masing-masing. DHCP Server mampu mendistribusikan alamat IP secara otomatis kepada client. NAT yang dikonfigurasi pada router memungkinkan seluruh host mengakses jaringan internet melalui satu alamat IP publik.
+Dari praktikum yang sudah dilakukan, dapat disimpulkan bahwa jaringan wireless ternyata bisa dikonfigurasi untuk berbagai kebutuhan tergantung topologi yang digunakan. Pada praktikum pertama dengan topologi Point to Point, dua router berhasil dihubungkan secara nirkabel di mana Router A berperan sebagai bridge dan Router B sebagai station. Komunikasi antar-router berjalan lancar. Namun, koneksi antar laptop belum berjalan dengan baik.
+Pada praktikum kedua dengan topologi Point to Multipoint, pendekatannya lebih simpel karena menggunakan bridge interface yang menyatukan wlan1 dan ether2 menjadi satu segmen jaringan. Hasilnya semua perangkat berada dalam satu jaringan yang sama tanpa perlu konfigurasi routing. DHCP Server di Router A juga berjalan dengan baik, terbukti dari status bound di Router B dan laptop yang langsung dapat IP otomatis.
+Secara keseluruhan, kedua topologi ini punya kelebihan dan kekurangannya masing-masing. Point to Point cocok dipakai ketika kita butuh menghubungkan dua titik secara spesifik dengan konfigurasi yang lebih terkontrol. Sementara Point to Multipoint lebih cocok untuk skenario yang butuh satu access point melayani banyak client sekaligus, karena konfigurasinya lebih efisien dan tidak perlu menambahkan routing secara manual untuk setiap titik yang terhubung.
 
-## Kesimpulan
-
-Konfigurasi IP Address, DHCP Server, dan NAT berhasil diterapkan. Seluruh host dapat berkomunikasi dengan router, antar host, dan internet sesuai dengan tujuan praktikum.
+---
