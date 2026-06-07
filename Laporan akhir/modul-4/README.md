@@ -1,4 +1,4 @@
-# 5.10 Dokumentasi
+# Dokumentasi
 Simpan laporan di LA/README.md dengan isi:
 
 Topologi jaringan
@@ -10,8 +10,6 @@ Analisis dan kesimpulan
 ---
 
 # 1. Topologi Jaringan
-
-## Topologi
 
 ![Topologi](images/topologi.jpeg)
 
@@ -25,44 +23,33 @@ Analisis dan kesimpulan
 
 # 3. Konfigurasi Tiap Perangkat
 
-## Router
+## FORTINET ROUTER STATIC KONFIGURASI
 
-### Konfigurasi IP Address
+![1](images/FORTINET%20ROUTER%20STATIC%20KONFIGURASI.jpeg)
 
-```bash
-/ip address add address=10.10.10.1/24 interface=ether2
-/ip address add address=10.20.20.1/24 interface=ether3
-```
+## KONFIGURASI CISCO VIOS
 
-### Screenshot
+![2](images/KONFIGURASI%20CISCO%20VIOS.jpeg)
 
-![Konfigurasi Router](images/router-ip.png)
+## KONFIGURASI FIREWALL FPRTINET
 
----
+![3](images/KONFIGURASI%20FIREWALL%20FPRTINET.jpeg)
 
-### Konfigurasi DHCP Server
+## KONFIGURASI INTERFACE FORTINET
 
-```bash
-/ip dhcp-server add name=dhcp1 interface=ether2
-```
+![4](images/KONFIGURASI%20INTERFACE%20FORTINET.jpeg)
 
-### Screenshot
+## KONFIGURASI MIKROTIK
 
-![DHCP Server](images/dhcp-server.png)
+![5](images/KONFIGURASI%20MIKROTIK.jpeg)
 
----
+## KONFIGURASI ROUTING FORTNET
 
-### Konfigurasi NAT
+![6](images/KONFIGURASI%20ROUTING%20FORTNET.jpeg)
 
-```bash
-/ip firewall nat
-add chain=srcnat out-interface=ether1 action=masquerade
-```
+## KONFIGURASI UBUNTU DMZ
 
-### Screenshot
-
-![NAT](images/nat.png)
-
+![7](images/KONFIGYRASI%20UBUNTU%20DMZ.jpeg)
 ---
 
 # 4. Hasil Pengujian
